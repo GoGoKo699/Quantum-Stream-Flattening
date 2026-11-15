@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "scope": "Floating-point complete initialized controlled-oracle Choi maps from exact IID characteristic functions, with independent forward/return blocks. Choi norm bounds enclose diamond distance; no SDP optimum or interval certificate is claimed.",
+  "cases": [
+    {
+      "probabilities": [
+        0.73,
+        0.27
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "public_floor": 0.25,
+      "epsilon": 0.4,
+      "cycles": 3,
+      "stages_each_direction": 12,
+      "clock_dimension_including_padding": 16,
+      "unused_clock_labels": 3,
+      "fresh_samples_forward_and_return": 63432,
+      "minimum_sample_block": 626,
+      "ideal_residual_active_amplitude": 3.605648623290026e-05,
+      "ideal_clean_isometry_error": 7.211297246580064e-05,
+      "maximum_envelope_excess": 0.0,
+      "full_channel_diamond_lower_bound": 0.0019659029809319765,
+      "full_channel_diamond_dual_upper_bound": 0.005057735477099735,
+      "proved_envelope_error_bound": 0.2624637715729302,
+      "trace_preservation_error_inf": 7.549516567451064e-15,
+      "choi_hermiticity_error_inf": 9.77112245420027e-17,
+      "minimum_choi_eigenvalue": -1.7268492358273902e-15,
+      "padding_output_maximum_entry": 0.0,
+      "controlled_all_one_vs_identity_diamond_lower_bound": null
+    },
+    {
+      "probabilities": [
+        0.5,
+        0.5
+      ],
+      "labels": [
+        1,
+        1
+      ],
+      "public_floor": 0.5,
+      "epsilon": 0.4,
+      "cycles": 3,
+      "stages_each_direction": 9,
+      "clock_dimension_including_padding": 16,
+      "unused_clock_labels": 6,
+      "fresh_samples_forward_and_return": 23568,
+      "minimum_sample_block": 382,
+      "ideal_residual_active_amplitude": 1.7105694144590046e-49,
+      "ideal_clean_isometry_error": 2.886579864025407e-15,
+      "maximum_envelope_excess": 0.0,
+      "full_channel_diamond_lower_bound": 0.006014204822033714,
+      "full_channel_diamond_dual_upper_bound": 0.009985971274627905,
+      "proved_envelope_error_bound": 0.26241707288584615,
+      "trace_preservation_error_inf": 5.662137425588298e-15,
+      "choi_hermiticity_error_inf": 2.3472667369611595e-16,
+      "minimum_choi_eigenvalue": -1.2003711439511655e-15,
+      "padding_output_maximum_entry": 0.0,
+      "controlled_all_one_vs_identity_diamond_lower_bound": 2.0
+    },
+    {
+      "probabilities": [
+        0.61,
+        0.39
+      ],
+      "labels": [
+        0,
+        0
+      ],
+      "public_floor": 0.3,
+      "epsilon": 0.4,
+      "cycles": 3,
+      "stages_each_direction": 12,
+      "clock_dimension_including_padding": 16,
+      "unused_clock_labels": 3,
+      "fresh_samples_forward_and_return": 63432,
+      "minimum_sample_block": 626,
+      "ideal_residual_active_amplitude": 0.0,
+      "ideal_clean_isometry_error": 3.774758283725532e-15,
+      "maximum_envelope_excess": 0.0,
+      "full_channel_diamond_lower_bound": 7.549516567451064e-15,
+      "full_channel_diamond_dual_upper_bound": 7.549516567451064e-15,
+      "proved_envelope_error_bound": 0.2624637715729302,
+      "trace_preservation_error_inf": 7.549516567451064e-15,
+      "choi_hermiticity_error_inf": 0.0,
+      "minimum_choi_eigenvalue": -3.3306690738754696e-16,
+      "padding_output_maximum_entry": 0.0,
+      "controlled_all_one_vs_identity_diamond_lower_bound": null
+    },
+    {
+      "probabilities": [
+        0.96875,
+        0.03125
+      ],
+      "labels": [
+        0,
+        1
+      ],
+      "public_floor": 0.03125,
+      "epsilon": 0.4,
+      "cycles": 3,
+      "stages_each_direction": 21,
+      "clock_dimension_including_padding": 32,
+      "unused_clock_labels": 10,
+      "fresh_samples_forward_and_return": 749594,
+      "minimum_sample_block": 2151,
+      "ideal_residual_active_amplitude": 5.669790153066863e-50,
+      "ideal_clean_isometry_error": 6.661338147750939e-15,
+      "maximum_envelope_excess": 0.0,
+      "full_channel_diamond_lower_bound": 0.0042932033903656484,
+      "full_channel_diamond_dual_upper_bound": 0.010872602586476782,
+      "proved_envelope_error_bound": 0.26249576734091906,
+      "trace_preservation_error_inf": 1.3211653993039363e-14,
+      "choi_hermiticity_error_inf": 4.910422038808746e-16,
+      "minimum_choi_eigenvalue": -9.293920780557382e-16,
+      "padding_output_maximum_entry": 0.0,
+      "controlled_all_one_vs_identity_diamond_lower_bound": null
+    }
+  ]
+}

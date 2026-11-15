@@ -1,0 +1,15 @@
+# Quantum Stream Flattening
+
+This repository studies a clean coherent Boolean oracle compiled during an invocation from passive iid classical records (x,f(x)), with arbitrary unknown fixed marginal p(x)>=b>0 and a supplied floor b. It is not a retained reusable program after processing.
+
+- science/model.md: exact access, initialized/reference-aware unhalved diamond error, main result and scope.
+- science/weighted_error.md: stochastic phase primitive and encoded-isometry CP/cross-term bound; zero-label generators vanish.
+- science/coherent_stopping.md: dyadic envelope, full-unitary compact clock, controlled phase convention.
+- science/sample_bound.md: finite sample allocation, integer ceilings, canonical inverse hybrid, error budgets and repeated-query upper.
+- science/resources.md: sampled-record and controller storage, clean work, comparisons, clock synthesis, finite rotation precision and rational sample allocation.
+- science/lower_bound.md: no-hit lower bound, feasible marginal and unmatched accuracy/query scaling.
+- science/examples.md: normalized uneven sampling families and specified earlier upper-bound comparison.
+- references/RELATED_WORK.md: attributed ingredients and target/access distinctions.
+- verification/README.md: full finite-check scope and reproducibility.
+
+Keep the qualifiers together: deterministic iid labels, supplied floor, average physical channel, initialized clean work, fresh samples even on return, small working space with public numeric input costs charged. No arbitrary noisy/correlated stream theorem, optimum epsilon/Q law, downstream computational separation or physical runtime advantage is asserted.
