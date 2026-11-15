@@ -11,5 +11,9 @@ This repository studies a clean coherent Boolean oracle compiled during an invoc
 - science/examples.md: normalized uneven sampling families and specified earlier upper-bound comparison.
 - references/RELATED_WORK.md: attributed ingredients and target/access distinctions.
 - verification/README.md: full finite-check scope and reproducibility.
+- learning/WATROUS_BRIDGE.md: the single educational anchor, Watrous (2018), verified section pointers, notation translation, worked example and missing proof steps.
+- learning/MILESTONES.md: the project-defined map M01–M30; background/preliminaries followed by narrative/innovation, with dependencies and source routes.
+
+For a first explanation, read the bridge and science/model.md, then the milestone map. For the construction, follow weighted_error.md → coherent_stopping.md → sample_bound.md. For specialist review, combine those proofs with resources.md, lower_bound.md and references/RELATED_WORK.md. Reproduce the bounded numerical evidence using verification/run_all.py.
 
 Keep the qualifiers together: deterministic iid labels, supplied floor, average physical channel, initialized clean work, fresh samples even on return, small working space with public numeric input costs charged. No arbitrary noisy/correlated stream theorem, optimum epsilon/Q law, downstream computational separation or physical runtime advantage is asserted.
