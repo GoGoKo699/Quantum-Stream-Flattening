@@ -19,7 +19,7 @@ For the Hermiticity-preserving channel difference with Choi matrix $J_\Delta$ an
 ```math
 \frac{\|J_\Delta\|_1}{d_{\rm in}}
 \le\|\Delta\|_\diamond
-\le\left\|\operatorname{Tr}_{\rm out}|J_\Delta|\right\|.
+\le\left\|\mathrm{Tr}_{\rm out}|J_\Delta|\right\|.
 ```
 
 The upper bound is a feasible Choi dual bound, not an optimization over all dual witnesses. No SDP optimum or interval certificate is claimed. Matrix positivity and norm inequalities are checked in floating point. The general theorem rests on the [written proofs](../science/README.md).

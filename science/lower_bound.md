@@ -35,6 +35,6 @@ An ordinary one-dimensional phase is unobservable, so $N=1$ is excluded from thi
 
 The upper bound grows as $1/\epsilon$ and the no-hit lower bound only as $\log(1/\epsilon)$. This leaves a precision gap. Likewise, assigning a local error budget to repeated fresh invocations gives a sufficient $Q^2$ query overhead, not a matching lower bound for this Boolean task.
 
-Theorem D.14 of [Zhao et al., arXiv:2604.07639v2](https://arxiv.org/abs/2604.07639v2), lower-bounds simulation of $U_p(t)=\operatorname{diag}(e^{itp(x)f(x)})$ by varying nearby probability laws with $f$ identically one. The target $U_p(t)$ then changes, whereas the Boolean $O_f$ stays fixed. Its accuracy/query lower bound therefore cannot be transferred to the flattened target without another argument.
+Theorem D.14 of [Zhao et al., arXiv:2604.07639v2](https://arxiv.org/abs/2604.07639v2), lower-bounds simulation of $U_p(t)=\mathrm{diag}(e^{itp(x)f(x)})$ by varying nearby probability laws with $f$ identically one. The target $U_p(t)$ then changes, whereas the Boolean $O_f$ stays fixed. Its accuracy/query lower bound therefore cannot be transferred to the flattened target without another argument.
 
 Unlimited storage also changes repeated-use comparisons: a complete classical function cache can support arbitrarily many later queries once learned, with its table storage and quantum-address lookup implementation charged. The present result uses small working space and fresh data during each query. It does not establish a complete sample–space–query frontier.

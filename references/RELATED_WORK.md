@@ -15,13 +15,13 @@ $$
 
 The present compiler retains the streamed rotations and averaged-channel framework. Its additional ingredients are a bound weighted by residual active amplitude, dyadic detection, and the resulting sample allocation. They give $O(1/(b\epsilon))$ samples plus integer stage overhead for the same generic unknown-marginal interface.
 
-The source's Theorem D.14 concerns the weighted evolution $\exp(i t\operatorname{diag}(pf))$ and varies the analogue marginal even when $f\equiv1$. Our target Boolean phase is then independent of that marginal. Its lower bound therefore cannot be transferred as a matching precision or query lower bound here. This distinction concerns the target operation, not a defect in the source theorem.
+The source's Theorem D.14 concerns the weighted evolution $\exp(i t\mathrm{diag}(pf))$ and varies the analogue marginal even when $f\equiv1$. Our target Boolean phase is then independent of that marginal. Its lower bound therefore cannot be transferred as a matching precision or query lower bound here. This distinction concerns the target operation, not a defect in the source theorem.
 
 ## Importance weighting requires a different input
 
 **A. Sepúlveda-Jiménez.** [*On the Optimality and Generalization of Quantum Oracle Sketching*](https://zenodo.org/records/19985473), May 2026.
 
-Section 5, Eq. (14), samples from a chosen proposal $q$ and uses the likelihood ratio $p(x)/q(x)$ in each rotation. Its expected generator retains the weighted diagonal $\operatorname{diag}(pf)$. The passive stream here cannot choose $q$ or evaluate that ratio, and its target removes the marginal from the Boolean phase. We use this construction only to identify those access and target differences; its other claims are not needed by our proof.
+Section 5, Eq. (14), samples from a chosen proposal $q$ and uses the likelihood ratio $p(x)/q(x)$ in each rotation. Its expected generator retains the weighted diagonal $\mathrm{diag}(pf)$. The passive stream here cannot choose $q$ or evaluate that ratio, and its target removes the marginal from the Boolean phase. We use this construction only to identify those access and target differences; its other claims are not needed by our proof.
 
 If $p(x)$ were evaluable, direct inverse-probability compensation would already provide the familiar inverse-$p_{\min}$ variance scale. The present contribution is attaining that scale from passive samples without that evaluation interface.
 

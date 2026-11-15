@@ -55,7 +55,7 @@ The corresponding mean-square difference satisfies
 ```math
 \begin{aligned}
 \mathbb E|v_x-u_x|^2
-&=2-2\operatorname{Re}\!\left(u_x^*\mathbb E v_x\right)\\
+&=2-2\mathrm{Re}\!\left(u_x^*\mathbb E v_x\right)\\
 &\le 2\left|\mathbb E v_x-u_x\right|
 \le \frac{t^2}{M}p(x)f(x).
 \end{aligned}

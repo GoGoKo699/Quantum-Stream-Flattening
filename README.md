@@ -30,6 +30,10 @@ Start with the [model and main result](science/model.md), then follow the circui
 
 [The scientific index](science/README.md) connects these pages. [The LLM reading guide](llms.txt) gives the same authoritative routes by task.
 
+## Learn the result
+
+The educational anchor is John Watrous, *The Theory of Quantum Information* (2018). The [source-to-project bridge](learning/WATROUS_BRIDGE.md) selects the relevant channel and distance foundations, translates notation, and supplies the steps specific to this compiler. The [30-milestone map](learning/MILESTONES.md) builds from the data-access model to the complete theorem and its limits.
+
 ## Reproduce the finite checks
 
 ```bash
@@ -44,4 +48,4 @@ The theorem assumes deterministic labels, iid records and a known positive floor
 
 ## Purpose and contact
 
-This repository records the scientific account and supports self-directed study. For discussion or potential collaboration, contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

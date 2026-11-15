@@ -55,7 +55,7 @@ For a $Q$-query circuit, fresh blocks with local accuracy $\epsilon/Q$ give the 
 
 ## Mechanism and proof route
 
-The inherited stream primitive targets $\exp(itH_p)$, where $H_p=\operatorname{diag}(p(x)f(x))$. It uses many small address-controlled rotations. A global error estimate depends on the largest address probability. Applying a global threshold at the smallest positive frequency then retains a skew penalty.
+The inherited stream primitive targets $\exp(itH_p)$, where $H_p=\mathrm{diag}(p(x)f(x))$. It uses many small address-controlled rotations. A global error estimate depends on the largest address probability. Applying a global threshold at the smallest positive frequency then retains a skew penalty.
 
 The [weighted error lemma](weighted_error.md) instead bounds the simulation only on the actual encoded incoming image. A high-frequency address that has mostly left the active clock label contributes proportionally less error. [Coherent stopping](coherent_stopping.md) constructs a dyadic sequence for which this attenuation is controlled by an exact sine-product identity. Later repeated ladders have geometrically smaller active amplitudes, so [sample allocation](sample_bound.md) keeps their total cost bounded without a squared logarithmic accuracy penalty. A middle phase and a separately justified inverse hybrid return the clock clean within the common error budget.
 

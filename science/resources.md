@@ -91,7 +91,7 @@ In particular, the middle predicate is **clock not zero**: apply phase minus one
 
 ## Clock and comparison circuits
 
-At stage $i$, a two-level Hadamard acts on $\operatorname{span}\{|0\rangle,|i\rangle\}$ of the $d$-qubit clock; all other clock labels are untouched. This can be decomposed along a Gray-code path into $O(d)$ multi-controlled single-qubit operations. A conservative implementation uses $O(d^2)$ elementary gates and $O(d)$ clean work qubits. The inverse follows the same path in reverse.
+At stage $i$, a two-level Hadamard acts on $\mathrm{span}\{|0\rangle,|i\rangle\}$ of the $d$-qubit clock; all other clock labels are untouched. This can be decomposed along a Gray-code path into $O(d)$ multi-controlled single-qubit operations. A conservative implementation uses $O(d^2)$ elementary gates and $O(d)$ clean work qubits. The inverse follows the same path in reverse.
 
 An address-and-clock equality test has $O(n+d)$ specified bits, including at most one outer-control bit. A Toffoli chain computes their conjunction using $O(n+d)$ Toffoli gates and $O(n+d)$ clean work qubits. After applying the one-qubit phase, reversing the chain restores all those work qubits. Negative controls require only additional single-qubit $X$ gates. These are ordinary gate constructions; the sample is classical control data, not a QRAM address query. See [Barenco et al.](../references/RELATED_WORK.md#gate-implementation).
 
