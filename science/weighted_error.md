@@ -85,7 +85,7 @@ The factor $f(x)$ is essential. A zero-labeled address can remain fully active e
 **Lemma.** With unhalved diamond norm,
 
 ```math
-\left\Vert 
+\left\Vert
 \mathbb E\!\left[VW(\cdot)W^\dagger V^\dagger\right]
 -UW(\cdot)W^\dagger U^\dagger
 \right\Vert _\diamond
@@ -106,8 +106,8 @@ The domain of this channel is the original address and retained-workspace input.
 Orthogonality of the address blocks and the scalar mean bound imply
 
 ```math
-\Vert A\Vert 
-=\max_x |\mathbb E v_x-u_x|\,\Vert CW_x\Vert 
+\Vert A\Vert
+=\max_x |\mathbb E v_x-u_x|\,\Vert CW_x\Vert
 \le \frac{t^2}{2M}\nu_1.
 ```
 

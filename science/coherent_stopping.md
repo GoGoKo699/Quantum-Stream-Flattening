@@ -127,7 +127,7 @@ we have the operator-norm estimate
 Applying $F^\dagger$ gives
 
 ```math
-\left\Vert 
+\left\Vert
 F^\dagger DF(I\otimes|0\rangle)
 -(I\otimes|0\rangle)O_f
 \right\Vert \le2\cdot4^{-R}.
