@@ -1,6 +1,6 @@
 # Averaged phase error on a coherently encoded input
 
-The stream provides independent classical pairs $(X_\ell,f(X_\ell))$, where $X_\ell$ has a fixed distribution $p$ on $[N]$ and $f:[N]\to\lbrace 0,1\rbrace $. The distribution is not evaluated by the compiler. Its diagonal mean is useful only for the analysis:
+The stream provides independent classical pairs $(X_\ell,f(X_\ell))$, where $X_\ell$ has a fixed distribution $p$ on $[N]$ and $f:[N]\to\lbrace 0,1\rbrace$. The distribution is not evaluated by the compiler. Its diagonal mean is useful only for the analysis:
 
 ```math
 H=\sum_{x=1}^N p(x)f(x)|x\rangle\langle x|.
@@ -25,7 +25,7 @@ This product is formed by applying each gate as its example arrives. It does not
 U=\exp(itH\otimes C).
 ```
 
-All sampled generators commute. Put $n_x=\sum_{\ell=1}^M\mathbf1\lbrace X_\ell=x\rbrace $. The phase on the active work subspace at address $x$ is
+All sampled generators commute. Put $n_x=\sum_{\ell=1}^M\mathbf1\lbrace X_\ell=x\rbrace$. The phase on the active work subspace at address $x$ is
 
 ```math
 v_x=\exp\!\left(\frac{it}{M}f(x)n_x\right),
@@ -111,9 +111,9 @@ Orthogonality of the address blocks and the scalar mean bound imply
 \le \frac{t^2}{2M}\nu_1.
 ```
 
-For a map $\rho\mapsto A\rho B^\dagger$, the diamond norm is at most $\Vert A\Vert \Vert B\Vert $: after adding any reference this follows from the trace-norm inequality $\Vert AXB\Vert _1\le\Vert A\Vert \Vert X\Vert _1\Vert B\Vert $. Since $UW$ is an isometry, the two cross terms therefore contribute at most $2\Vert A\Vert $.
+For a map $\rho\mapsto A\rho B^\dagger$, the diamond norm is at most $\Vert A\Vert \Vert B\Vert$: after adding any reference this follows from the trace-norm inequality $\Vert AXB\Vert _1\le\Vert A\Vert \Vert X\Vert _1\Vert B\Vert$. Since $UW$ is an isometry, the two cross terms therefore contribute at most $2\Vert A\Vert$.
 
-A completely positive map has diamond norm $\Vert \mathcal R^\dagger(I)\Vert $. Here
+A completely positive map has diamond norm $\Vert \mathcal R^\dagger(I)\Vert$. Here
 
 ```math
 \begin{aligned}

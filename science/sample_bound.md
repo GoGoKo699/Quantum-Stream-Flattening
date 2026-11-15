@@ -19,7 +19,7 @@ There are $K$ forward detection stages and $K$ inverse stages. The central clock
 At stage $(r,j)$ the ideal phase has time $t_j=\pi/a_j$. Immediately after its first two-level Hadamard, the magnitude on the phase-controlled clock label is at most the magnitude of the previously active component. For a one-labeled address it is therefore bounded by
 
 ```math
-4^{-r}\min\!\left\lbrace 1,\frac{a_j}{p(x)}\right\rbrace .
+4^{-r}\min\!\left\lbrace 1,\frac{a_j}{p(x)}\right\rbrace.
 ```
 
 The extra factor $1/\sqrt2$ could improve constants and is omitted. Zero-labeled addresses contribute no sampled phase error. Consequently the weighted estimate gives

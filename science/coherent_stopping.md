@@ -29,7 +29,7 @@ i=rL+j+1.
 Let $B_i$ be the two-level Hadamard on the span of $|0\rangle,|i\rangle$, acting as the identity on every other clock state. Its nontrivial matrix is
 
 ```math
-B_i\big|_{\lbrace 0,i\rbrace }=\frac1{\sqrt2}
+B_i\big|_{\lbrace 0,i\rbrace}=\frac1{\sqrt2}
 \begin{pmatrix}1&1\\1&-1\end{pmatrix}.
 ```
 
@@ -80,7 +80,7 @@ The product identity
 follows by iterating $\sin(2z)=2\sin z\cos z$. Here $z=\pi p/2\in(0,\pi/2]$, and concavity of sine on this interval gives $\sin z\ge2z/\pi=p$. Hence
 
 ```math
-c_j(p)\le\min\!\left\lbrace 1,\frac{a_j}{p}\right\rbrace .
+c_j(p)\le\min\!\left\lbrace 1,\frac{a_j}{p}\right\rbrace.
 ```
 
 No discrete-spectrum promise is involved. The frequency can lie anywhere in $[b,1]$. After all $L$ stages in one ladder,
@@ -93,7 +93,7 @@ c_L(p)\le\frac{a_L}{p}
 Only the still-active component enters the next ladder. Therefore, just before stage $(r,j)$, its magnitude is at most
 
 ```math
-4^{-r}\min\!\left\lbrace 1,\frac{a_j}{p}\right\rbrace .
+4^{-r}\min\!\left\lbrace 1,\frac{a_j}{p}\right\rbrace.
 ```
 
 In particular, multiplication by $p$ gives the bound $4^{-r}a_j$ that drives the weighted sampling estimate. It remains valid even if a high-frequency address has not been detected exactly.
@@ -133,7 +133,7 @@ F^\dagger DF(I\otimes|0\rangle)
 \right\Vert \le2\cdot4^{-R}.
 ```
 
-This compares the entire output, including the returned clock, with the intended clean output. It is not merely a bound after discarding the clock. For two isometries $A,B$, expanding their channel difference as $(A-B)\rho A^\dagger+B\rho(A-B)^\dagger$ bounds its diamond norm by $2\Vert A-B\Vert $. The induced initialized-input channels here are therefore within $4\cdot4^{-R}$ in unhalved diamond norm, including any entangled input reference.
+This compares the entire output, including the returned clock, with the intended clean output. It is not merely a bound after discarding the clock. For two isometries $A,B$, expanding their channel difference as $(A-B)\rho A^\dagger+B\rho(A-B)^\dagger$ bounds its diamond norm by $2\Vert A-B\Vert$. The induced initialized-input channels here are therefore within $4\cdot4^{-R}$ in unhalved diamond norm, including any entangled input reference.
 
 ## Coherent control and a bit query
 

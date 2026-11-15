@@ -6,7 +6,7 @@ The answer is negative for the model below. A public lower bound on address prob
 
 ## Input, target and error
 
-Let $[N]=\lbrace 1,\ldots,N\rbrace $ and let $f:[N]\to\lbrace 0,1\rbrace $ be an arbitrary fixed function. The only unknown-data access consists of fresh classical records
+Let $[N]=\lbrace 1,\ldots,N\rbrace$ and let $f:[N]\to\lbrace 0,1\rbrace$ be an arbitrary fixed function. The only unknown-data access consists of fresh classical records
 
 ```math
 (X_\ell,f(X_\ell)),\qquad X_\ell\overset{\mathrm{iid}}\sim p,

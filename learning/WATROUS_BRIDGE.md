@@ -22,7 +22,7 @@ These section pointers are to the author-hosted 2018 text. The gate-by-gate stop
 | --- | --- | --- |
 | $\rho$ | A data/work input state, possibly correlated with a reference | A density operator of a compound register. |
 | $A^\dagger$ | The adjoint of an operator | Watrous commonly writes $A^*$. |
-| $\Vert A\Vert $ | Operator norm | Measures the largest amplification of a vector. |
+| $\Vert A\Vert$ | Operator norm | Measures the largest amplification of a vector. |
 | $\Vert X\Vert _1$ | Trace norm | Quantifies state distinguishability. |
 | $\Vert \Phi\Vert _\diamond$ | Unhalved completely bounded trace norm | The book writes this norm using its triple-bar trace-norm notation. |
 | $W$ | An ideal address-preserving isometry | $W^\dagger W=I$; it coherently appends or evolves initialized work. |
@@ -41,7 +41,7 @@ Appending zero work restricts the domain on which the compiler is promised to wo
 
 ## From a classical record to a coherent phase
 
-Let $f:[N]\to\lbrace 0,1\rbrace $ be fixed. The source reveals only fresh pairs $(X_\ell,f(X_\ell))$, with $X_\ell\sim p$ iid and unknown $p(x)\ge b$. A classical record $x$ can program a known address-equality gate without measuring the address register on which that gate acts.
+Let $f:[N]\to\lbrace 0,1\rbrace$ be fixed. The source reveals only fresh pairs $(X_\ell,f(X_\ell))$, with $X_\ell\sim p$ iid and unknown $p(x)\ge b$. A classical record $x$ can program a known address-equality gate without measuring the address register on which that gate acts.
 
 For a known clock projector $C$, one block of $M$ records applies
 
@@ -96,7 +96,7 @@ For a one-labeled address of frequency $p$, the surviving amplitude after the fi
 ```math
 c_j(p)=\prod_{\ell=0}^{j-1}|\cos(2^\ell z)|
 =\left|\frac{\sin(2^jz)}{2^j\sin z}\right|
-\le\min\lbrace 1,a_j/p\rbrace ,
+\le\min\lbrace 1,a_j/p\rbrace,
 \qquad z=\pi p/2.
 ```
 
