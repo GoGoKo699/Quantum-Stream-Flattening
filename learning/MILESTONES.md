@@ -13,7 +13,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M01 — Separate addresses, labels and sampling frequencies
 
 - **Central question:** What information does one classical record reveal, and what remains unknown?
-- **Understanding target:** Distinguish the address $x$, its deterministic label $f(x)$, the unknown probability $p(x)$ and the supplied floor $b$. Explain why observing a record does not provide an oracle for evaluating $p$ or choosing a different sampling law.
+- **Understanding target:** Distinguish the address $`x`$, its deterministic label $`f(x)`$, the unknown probability $`p(x)`$ and the supplied floor $`b`$. Explain why observing a record does not provide an oracle for evaluating $`p`$ or choosing a different sampling law.
 - **Dependencies and story role:** No earlier milestone is needed. This fixes the local data objects before any quantum operation is introduced.
 - **Conceptual connection:** A classical record can serve as known control data while the distribution generating records remains unknown.
 - **Source pointers:** [Input, target and error](../science/model.md#input-target-and-error); Watrous §2.1.2 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf)) for the register language.
@@ -21,9 +21,9 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M02 — Read a phase oracle as an operation on coherence
 
 - **Central question:** What does a Boolean phase query do to a superposition?
-- **Understanding target:** Explain $O_f|x\rangle=(-1)^{f(x)}|x\rangle$ and how relative signs alter interference even though computational-basis probabilities remain unchanged. Distinguish applying this operation from outputting a classical function table.
+- **Understanding target:** Explain $`O_f|x\rangle=(-1)^{f(x)}|x\rangle`$ and how relative signs alter interference even though computational-basis probabilities remain unchanged. Distinguish applying this operation from outputting a classical function table.
 - **Dependencies and story role:** Uses M01. It adds the local quantum target to the classical input description.
-- **Conceptual connection:** The label controls a relative phase on the data register; the caller's input amplitudes are not the sampling probabilities $p(x)$.
+- **Conceptual connection:** The label controls a relative phase on the data register; the caller's input amplitudes are not the sampling probabilities $`p(x)`$.
 - **Source pointers:** [Input, target and error](../science/model.md#input-target-and-error); Watrous §§2.1.2 and 2.3.1 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf)).
 
 ### M03 — Keep the input, work and reference distinct
@@ -69,7 +69,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M08 — Connect empirical counts to weak diagonal rotations
 
 - **Central question:** Why does a stream-driven phase accumulate at an address-dependent rate?
-- **Understanding target:** Explain the binomial count $n_x$, its mean and variance, and the empirical phase produced by many small rotations. Identify the analysis operator $H=\mathrm{diag}(pf)$ without treating it as a supplied oracle.
+- **Understanding target:** Explain the binomial count $`n_x`$, its mean and variance, and the empirical phase produced by many small rotations. Identify the analysis operator $`H=\mathrm{diag}(pf)`$ without treating it as a supplied oracle.
 - **Dependencies and story role:** Uses M01, M02 and M04. It supplies the statistical ingredient that will later determine sample cost.
 - **Conceptual connection:** Classical randomness appears as uncertainty in a coherent phase; its mean rate depends on the unknown marginal.
 - **Source pointers:** [A sampled controlled phase](../science/weighted_error.md#a-sampled-controlled-phase); Watrous §2.2.2 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf)) for channels represented by randomized operations. The binomial calculation is supplied locally.
@@ -103,7 +103,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M12 — Weight channel error by remaining active amplitude
 
 - **Central question:** How can a small active branch reduce the cost of a sampled phase?
-- **Understanding target:** Reconstruct the decomposition into a completely positive remainder and two cross maps. Explain why their bounds involve $p(x)f(x)c_x^2$ and $p(x)f(x)c_x$, respectively, and why the maximum is over address blocks rather than a sum over addresses.
+- **Understanding target:** Reconstruct the decomposition into a completely positive remainder and two cross maps. Explain why their bounds involve $`p(x)f(x)c_x^2`$ and $`p(x)f(x)c_x`$, respectively, and why the maximum is over address blocks rather than a sum over addresses.
 - **Dependencies and story role:** Uses M03, M06 and M11. It establishes the central new local estimate before choosing a stopping circuit.
 - **Conceptual connection:** The relevant error depends on the incoming encoded image. A zero-labeled branch contributes no phase error, and a mostly stopped one-labeled branch contributes little even if its frequency is large.
 - **Source pointers:** [Weighted input-image bound](../science/weighted_error.md#weighted-input-image-bound); Watrous §§2.2.2 and 3.3.2 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf), [Chapter 3](https://jhwatrous.github.io/TQI.3.pdf)).
@@ -119,7 +119,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M14 — Compress the first-detection record into a clock
 
 - **Central question:** Why can many potential stopping events fit into a logarithmic-size register?
-- **Understanding target:** Explain the basis labels “active” and “first detected at stage $i$,” and the two-level Hadamard acting only on labels $0,i$. Show why earlier stopped labels bypass later stages and why the construction is a full unitary that can be reversed.
+- **Understanding target:** Explain the basis labels “active” and “first detected at stage $`i`$,” and the two-level Hadamard acting only on labels $`0,i`$. Show why earlier stopped labels bypass later stages and why the construction is a full unitary that can be reversed.
 - **Dependencies and story role:** Uses M03 and M13. The single local detector becomes an implementable sequence without a growing collection of independent flag registers.
 - **Conceptual connection:** The compiler stores a coherent detection time, not an address-to-frequency table or a transcript of the stream.
 - **Source pointers:** [Clock definition and stage unitary](../science/coherent_stopping.md); [Clock and comparison circuits](../science/resources.md#clock-and-comparison-circuits); Watrous §2.2.2 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf)).
@@ -127,7 +127,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M15 — Derive a dyadic envelope for arbitrary frequencies
 
 - **Central question:** How can fixed scales control a frequency that is neither known nor on a discrete grid?
-- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $\sin(\pi p/2)\ge p$ to obtain $c_j(p)\le\min\lbrace 1,a_j/p\rbrace$. Explain why no exact-level or calibrated $p_{\max}$ promise is needed.
+- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $`\sin(\pi p/2)\ge p`$ to obtain $`c_j(p)\le\min\lbrace 1,a_j/p\rbrace`$. Explain why no exact-level or calibrated $`p_{\max}`$ promise is needed.
 - **Dependencies and story role:** Uses M13–M14. The detector sequence now yields a quantitative image bound for every allowed marginal.
 - **Conceptual connection:** Unknown frequency controls where amplitude stops, while the same public ladder controls the worst-case residual at every scale.
 - **Source pointers:** [The dyadic envelope holds for every frequency](../science/coherent_stopping.md#the-dyadic-envelope-holds-for-every-frequency). The trigonometric derivation is supplied locally; Watrous's channel framework remains the educational foundation.
@@ -135,7 +135,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M16 — Suppress the undetected component across ladders
 
 - **Central question:** Why repeat a ladder after it already reaches the supplied frequency floor?
-- **Understanding target:** Explain why one completed ladder leaves at most one-quarter active amplitude on each label-one address and why $r$ completed ladders supply the additional factor $4^{-r}$. Keep amplitude attenuation distinct from probability attenuation.
+- **Understanding target:** Explain why one completed ladder leaves at most one-quarter active amplitude on each label-one address and why $`r`$ completed ladders supply the additional factor $`4^{-r}`$. Keep amplitude attenuation distinct from probability attenuation.
 - **Dependencies and story role:** Uses M15. It turns the within-ladder estimate into the accuracy mechanism for the whole circuit.
 - **Conceptual connection:** Later ladders act on less amplitude and can therefore be compiled with fewer samples; repetition need not multiply the leading cost by the number of ladders.
 - **Source pointers:** [The dyadic envelope](../science/coherent_stopping.md#the-dyadic-envelope-holds-for-every-frequency); [Local sampling cost](../science/sample_bound.md#local-sampling-cost-on-each-ideal-image).
@@ -143,7 +143,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M17 — Convert detection into a clean Boolean phase
 
 - **Central question:** How does a phase on detected clock labels become a phase on the data input?
-- **Understanding target:** Explain the central reflection that is $+1$ on the active label and $-1$ on detected labels. Derive its isometry error from the residual active amplitude, then explain ideal uncomputation and the bound on the entire returned clock.
+- **Understanding target:** Explain the central reflection that is $`+1`$ on the active label and $`-1`$ on detected labels. Derive its isometry error from the residual active amplitude, then explain ideal uncomputation and the bound on the entire returned clock.
 - **Dependencies and story role:** Uses M06, M14 and M16. It connects the stopped branches to the desired query rather than treating detection as the final output.
 - **Conceptual connection:** Clean return is proved before tracing out work, so reference coherence and the caller's later computation remain covered.
 - **Source pointers:** [Applying the phase and returning the clock](../science/coherent_stopping.md#applying-the-phase-and-returning-the-clock); Watrous §§3.3.2–3.3.3 ([Chapter 3](https://jhwatrous.github.io/TQI.3.pdf)).
@@ -151,7 +151,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M18 — Justify the inverse half with a canonical comparison
 
 - **Central question:** Why does a noisy forward circuit not invalidate the return-path error estimate?
-- **Understanding target:** Explain the middle replacement $DW\mapsto WO_f$, charge its error once, and identify each canonical inverse prefix. Distinguish a fresh-sample implementation of an inverse ideal phase from replaying or reversing the earlier random sample sequence.
+- **Understanding target:** Explain the middle replacement $`DW\mapsto WO_f`$, charge its error once, and identify each canonical inverse prefix. Distinguish a fresh-sample implementation of an inverse ideal phase from replaying or reversing the earlier random sample sequence.
 - **Dependencies and story role:** Uses M09 and M17. It resolves the point where a local image bound could otherwise be applied outside its valid domain.
 - **Conceptual connection:** The proof follows ideal comparison images inside a channel hybrid; it does not require the physical noisy state to remain exactly on those images.
 - **Source pointers:** [The middle comparison and the return path](../science/sample_bound.md#the-middle-comparison-and-the-return-path); Watrous §§2.2.2 and 3.3.2–3.3.3 ([Chapter 2](https://jhwatrous.github.io/TQI.2.pdf), [Chapter 3](https://jhwatrous.github.io/TQI.3.pdf)).
@@ -159,23 +159,23 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M19 — Price each forward and reverse streamed phase
 
 - **Central question:** What does the active-amplitude envelope imply for a stage's sample coefficient?
-- **Understanding target:** Combine $t_j=\pi/a_j$, the weighted image bound and the factor $4^{-r}$ to obtain local error at most $\kappa_{rj}/M$, with $\kappa_{rj}=2\pi^2 4^{-r}/a_j$. Explain why the same coefficient is valid in the inverse half.
+- **Understanding target:** Combine $`t_j=\pi/a_j`$, the weighted image bound and the factor $`4^{-r}`$ to obtain local error at most $`\kappa_{rj}/M`$, with $`\kappa_{rj}=2\pi^2 4^{-r}/a_j`$. Explain why the same coefficient is valid in the inverse half.
 - **Dependencies and story role:** Uses M12, M15–M16 and M18. It joins the new analytical estimate to the actual circuit.
-- **Conceptual connection:** High-frequency addresses no longer impose the unrestricted $p_{\max}$ cost at every late stage because their relevant amplitudes have been attenuated.
+- **Conceptual connection:** High-frequency addresses no longer impose the unrestricted $`p_{\max}`$ cost at every late stage because their relevant amplitudes have been attenuated.
 - **Source pointers:** [Local sampling cost on each ideal image](../science/sample_bound.md#local-sampling-cost-on-each-ideal-image); [Weighted input-image bound](../science/weighted_error.md#weighted-input-image-bound).
 
 ### M20 — Allocate a finite integer sample budget
 
 - **Central question:** How should a common error allowance be shared among unequal stage costs?
-- **Understanding target:** Explain the square-root allocation through $T=\sum_i\sqrt{\kappa_i}$ and positive integer counts $M_i=\lceil2T\sqrt{\kappa_i}/\epsilon\rceil$. Derive the stochastic error sum and retain the ceiling contribution to total samples.
+- **Understanding target:** Explain the square-root allocation through $`T=\sum_i\sqrt{\kappa_i}`$ and positive integer counts $`M_i=\lceil2T\sqrt{\kappa_i}/\epsilon\rceil`$. Derive the stochastic error sum and retain the ceiling contribution to total samples.
 - **Dependencies and story role:** Uses M09 and M19. Local coefficients become one valid finite circuit budget.
 - **Conceptual connection:** Allocation is based on known stage parameters, not on estimating the hidden frequencies from the stream.
 - **Source pointers:** [Allocating integer sample counts](../science/sample_bound.md#allocating-integer-sample-counts); [Finite precision](../science/resources.md#finite-precision-does-not-restore-a-skew-penalty) for computable conservative allocations.
 
 ### M21 — Sum the geometric costs without losing the accuracy gain
 
-- **Central question:** Why does the complete sample cost scale as $1/(b\epsilon)$?
-- **Understanding target:** Evaluate the geometric sums over scale and repetition, bound $T=O(b^{-1/2})$ and obtain the explicit sample upper including stage ceilings. Explain how discarding attenuation across ladders would create an unnecessary squared logarithm in accuracy.
+- **Central question:** Why does the complete sample cost scale as $`1/(b\epsilon)`$?
+- **Understanding target:** Evaluate the geometric sums over scale and repetition, bound $`T=O(b^{-1/2})`$ and obtain the explicit sample upper including stage ceilings. Explain how discarding attenuation across ladders would create an unnecessary squared logarithm in accuracy.
 - **Dependencies and story role:** Uses M16 and M20. This is the global sample conclusion assembled from the local mechanism.
 - **Conceptual connection:** Coherent stopping changes the cost of simulating later operations, not merely their execution order.
 - **Source pointers:** [Allocating integer sample counts](../science/sample_bound.md#allocating-integer-sample-counts); [Samples and error allocation](../science/resources.md#samples-and-error-allocation).
@@ -207,7 +207,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M25 — Charge controller precision and input-holding time
 
 - **Central question:** Can long phase times or public numerical parameters hide a large implementation cost?
-- **Understanding target:** Explain modular reduction of rational multiples of $\pi$, conservative rational sample allocations and the finite gate-synthesis budget. Count the current record, stage/sample counters and public-parameter descriptions; identify the physical time for which the input must remain coherent.
+- **Understanding target:** Explain modular reduction of rational multiples of $`\pi`$, conservative rational sample allocations and the finite gate-synthesis budget. Count the current record, stage/sample counters and public-parameter descriptions; identify the physical time for which the input must remain coherent.
 - **Dependencies and story role:** Uses M20, M22 and M24. This completes the resource account beyond logical quantum width.
 - **Conceptual connection:** Logical polylogarithmic overhead does not by itself establish a hardware crossover, negligible source latency or a noise-tolerant physical device.
 - **Source pointers:** [Finite precision does not restore a skew penalty](../science/resources.md#finite-precision-does-not-restore-a-skew-penalty); [Charged interface and limits](../science/resources.md#charged-interface-and-limits).
@@ -215,7 +215,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M26 — Interpret the heavy-tail examples faithfully
 
 - **Central question:** What concrete improvement does removing the skew factor make possible?
-- **Understanding target:** Analyze the normalized dyadic heavy tail, its support size and minimum probability, and compare $1/b$ with the earlier $p_{\max}/b^2$ coefficient. Explain the seven-address clock example without treating coefficient tables as numerical sample budgets or classical speedup evidence.
+- **Understanding target:** Analyze the normalized dyadic heavy tail, its support size and minimum probability, and compare $`1/b`$ with the earlier $`p_{\max}/b^2`$ coefficient. Explain the seven-address clock example without treating coefficient tables as numerical sample budgets or classical speedup evidence.
 - **Dependencies and story role:** Uses M21 and M24–M25. It translates the theorem into a complete illustrative family after its costs are known.
 - **Conceptual connection:** The example measures a difference between compiler upper bounds for the same passive unknown marginal; it supplies neither an earlier-method lower bound nor an application-level separation.
 - **Source pointers:** [Examples of marginal skew](../science/examples.md); [Nearest phase-oracle construction](../references/RELATED_WORK.md#the-nearest-phase-oracle-construction).
@@ -223,7 +223,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M27 — Match the rarity dependence and retain the precision gap
 
 - **Central question:** What must every compiler learn before it can answer on a rarely observed address?
-- **Understanding target:** Use the no-hit event to compare two functions differing at one address and derive the lower bound on sample count. Explain the fixed-error $1/b$ match, the remaining $1/\epsilon$ versus logarithmic precision gap, and the special role of coherent control when a phase would otherwise be global.
+- **Understanding target:** Use the no-hit event to compare two functions differing at one address and derive the lower bound on sample count. Explain the fixed-error $`1/b`$ match, the remaining $`1/\epsilon`$ versus logarithmic precision gap, and the special role of coherent control when a phase would otherwise be global.
 - **Dependencies and story role:** Uses M05–M07, M21 and M23. It places the achieved upper bound against an operational obstruction.
 - **Conceptual connection:** A lower bound must change the Boolean target itself; changing only the probability-weighted evolution does not provide the needed converse.
 - **Source pointers:** [Rare-address lower bound and remaining gap](../science/lower_bound.md); Watrous §§3.1 and 3.3.3 ([Chapter 3](https://jhwatrous.github.io/TQI.3.pdf)).
@@ -231,7 +231,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M28 — Compose later queries without inventing a stored oracle
 
 - **Central question:** What changes when a learning algorithm needs several coherent invocations?
-- **Understanding target:** Allocate error $\epsilon/Q$ to each fresh invocation and derive the sufficient $Q^2/(b\epsilon)$ sample upper with its stage overhead. Distinguish that achievable bound from an optimal query law and from an unrestricted-memory function cache.
+- **Understanding target:** Allocate error $`\epsilon/Q`$ to each fresh invocation and derive the sufficient $`Q^2/(b\epsilon)`$ sample upper with its stage overhead. Distinguish that achievable bound from an optimal query law and from an unrestricted-memory function cache.
 - **Dependencies and story role:** Uses M09, M21–M23 and M27. The single clean invocation becomes a usable algorithmic subroutine with its repeated costs visible.
 - **Conceptual connection:** Returning quantum work clean permits composition, while the consumed classical sample resource must still be replenished for every invocation.
 - **Source pointers:** [Several queries use several fresh source blocks](../science/sample_bound.md#several-queries-use-several-fresh-source-blocks); [What is not matched](../science/lower_bound.md#what-is-not-matched).
@@ -247,7 +247,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M30 — State the complete contribution with its boundaries
 
 - **Central question:** What can the compiler now accomplish, under which assumptions and at which complete logical cost?
-- **Understanding target:** Give one connected account from fresh fixed-IID deterministic records and a public positive floor to a clean reference-aware controlled Boolean query, its $1/b$ sample upper and charged small workspace. Keep the supplied floor, initialized-input convention, fresh-query costs, finite precision, fixed-error lower match and unresolved precision/query gaps together. Explain why correlated sources, label noise, unknown support, reusable stored oracles and downstream classical-task separations require separate claims.
+- **Understanding target:** Give one connected account from fresh fixed-IID deterministic records and a public positive floor to a clean reference-aware controlled Boolean query, its $`1/b`$ sample upper and charged small workspace. Keep the supplied floor, initialized-input convention, fresh-query costs, finite precision, fixed-error lower match and unresolved precision/query gaps together. Explain why correlated sources, label noise, unknown support, reusable stored oracles and downstream classical-task separations require separate claims.
 - **Dependencies and story role:** Integrates M01–M29 and closes the narrative phase with the complete scientific proposition rather than an additional extension.
 - **Conceptual connection:** The global result follows because a coherent stopping structure changes how local sample fluctuations act on the incoming image, and the implementation and comparison preserve that same operational meaning.
 - **Source pointers:** [Input model and main result](../science/model.md), [sample theorem](../science/sample_bound.md), [resources](../science/resources.md), [lower bound](../science/lower_bound.md), [related work](../references/RELATED_WORK.md) and [verification scope](../verification/README.md).

@@ -2,7 +2,7 @@
 
 **Can an uneven classical data stream supply coherent quantum access without learning its sampling frequencies?** A weighted error estimate and a coherent stopping circuit give an affirmative answer for iid Boolean data.
 
-The stream supplies ordinary records $(x,f(x))$ with an unknown fixed marginal $p(x)\ge b>0$. The compiler acts on an arbitrary quantum input already present during the stream. For unhalved diamond error $0<\epsilon<1$, its sample upper bound is
+The stream supplies ordinary records $`(x,f(x))`$ with an unknown fixed marginal $`p(x)\ge b>0`$. The compiler acts on an arbitrary quantum input already present during the stream. For unhalved diamond error $`0\lt \epsilon\lt 1`$, its sample upper bound is
 
 ```math
 M=O\!\left(\frac1{b\epsilon}\right).
@@ -10,7 +10,7 @@ M=O\!\left(\frac1{b\epsilon}\right).
 
 The guarantee includes coherent control, arbitrary entangled references and return of initialized work within the same error. Only a certified positive probability floor is needed. The address-frequency assignment is never learned or stored, and each classical record is processed once. Every later oracle invocation consumes fresh samples.
 
-[Quantum oracle sketching](references/RELATED_WORK.md) supplies the streamed phase rotations and scalar variance argument. The contribution here is the incoming-image error bound and dyadic stopping/allocation that remove the extra sampling-skew factor from the specified earlier unknown-marginal upper bound. At fixed accuracy, the $1/b$ sample dependence matches a rare-address lower bound. The dependence on accuracy and on the number of oracle calls is not claimed optimal.
+[Quantum oracle sketching](references/RELATED_WORK.md) supplies the streamed phase rotations and scalar variance argument. The contribution here is the incoming-image error bound and dyadic stopping/allocation that remove the extra sampling-skew factor from the specified earlier unknown-marginal upper bound. At fixed accuracy, the $`1/b`$ sample dependence matches a rare-address lower bound. The dependence on accuracy and on the number of oracle calls is not claimed optimal.
 
 ## Read the science
 

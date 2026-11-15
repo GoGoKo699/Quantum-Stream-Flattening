@@ -14,7 +14,7 @@ For each small example, the program propagates every input matrix unit through t
 
 The examples include non-dyadic probabilities, an all-zero function, an all-one function and a 31:1 sampling imbalance. The all-one function is essential: an ordinary phase channel cannot observe a global minus sign, while the controlled oracle must retain it.
 
-For the Hermiticity-preserving channel difference with Choi matrix $J_\Delta$ and input dimension $d_{\rm in}$, the program uses the bounds
+For the Hermiticity-preserving channel difference with Choi matrix $`J_\Delta`$ and input dimension $`d_{\rm in}`$, the program uses the bounds
 
 ```math
 \frac{\Vert J_\Delta\Vert _1}{d_{\rm in}}
@@ -24,7 +24,7 @@ For the Hermiticity-preserving channel difference with Choi matrix $J_\Delta$ an
 
 The upper bound is a feasible Choi dual bound, not an optimization over all dual witnesses. No SDP optimum or interval certificate is claimed. Matrix positivity and norm inequalities are checked in floating point. The general theorem rests on the [written proofs](../science/README.md).
 
-The published diagnostics have diamond upper bounds below 0.011, versus analytical envelope bounds below 0.263 at requested error 0.4. The trace-preservation residual is below $1.4\times10^{-14}$; small negative Choi eigenvalues are at roundoff scale. These finite values do not establish scaling laws or mathematical truth for untested dimensions.
+The published diagnostics have diamond upper bounds below 0.011, versus analytical envelope bounds below 0.263 at requested error 0.4. The trace-preservation residual is below $`1.4\times10^{-14}`$; small negative Choi eigenvalues are at roundoff scale. These finite values do not establish scaling laws or mathematical truth for untested dimensions.
 
 To emit a fresh full report explicitly:
 
