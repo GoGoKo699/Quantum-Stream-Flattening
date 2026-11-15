@@ -127,7 +127,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M15 — Derive a dyadic envelope for arbitrary frequencies
 
 - **Central question:** How can fixed scales control a frequency that is neither known nor on a discrete grid?
-- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $\sin(\pi p/2)\ge p$ to obtain $c_j(p)\le\min\{1,a_j/p\}$. Explain why no exact-level or calibrated-$p_{\max}$ promise is needed.
+- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $\sin(\pi p/2)\ge p$ to obtain $c_j(p)\le\min\lbrace 1,a_j/p\rbrace $. Explain why no exact-level or calibrated-$p_{\max}$ promise is needed.
 - **Dependencies and story role:** Uses M13–M14. The detector sequence now yields a quantitative image bound for every allowed marginal.
 - **Conceptual connection:** Unknown frequency controls where amplitude stops, while the same public ladder controls the worst-case residual at every scale.
 - **Source pointers:** [The dyadic envelope holds for every frequency](../science/coherent_stopping.md#the-dyadic-envelope-holds-for-every-frequency). The trigonometric derivation is supplied locally; Watrous's channel framework remains the educational foundation.

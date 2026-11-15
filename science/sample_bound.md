@@ -19,7 +19,7 @@ There are $K$ forward detection stages and $K$ inverse stages. The central clock
 At stage $(r,j)$ the ideal phase has time $t_j=\pi/a_j$. Immediately after its first two-level Hadamard, the magnitude on the phase-controlled clock label is at most the magnitude of the previously active component. For a one-labeled address it is therefore bounded by
 
 ```math
-4^{-r}\min\!\left\{1,\frac{a_j}{p(x)}\right\}.
+4^{-r}\min\!\left\lbrace 1,\frac{a_j}{p(x)}\right\rbrace .
 ```
 
 The extra factor $1/\sqrt2$ could improve constants and is omitted. Zero-labeled addresses contribute no sampled phase error. Consequently the weighted estimate gives
@@ -44,7 +44,7 @@ The input-image interpretation matters. The compiler does not apply a worst-case
 Let $W=F(I\otimes|0\rangle)$ be the ideal forward detection isometry. The central clock phase obeys
 
 ```math
-\|DW-WO_f\|\le2\cdot4^{-R}.
+\Vert DW-WO_f\Vert \le2\cdot4^{-R}.
 ```
 
 The corresponding channel change is at most $4\cdot4^{-R}\le\epsilon/4$. For the inverse-half comparison, replace $DW$ by $WO_f$. The remaining ideal inverse sequence now returns the clock exactly: $F^\dagger WO_f=(I\otimes|0\rangle)O_f$.

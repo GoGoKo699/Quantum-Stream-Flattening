@@ -17,9 +17,9 @@ The examples include non-dyadic probabilities, an all-zero function, an all-one 
 For the Hermiticity-preserving channel difference with Choi matrix $J_\Delta$ and input dimension $d_{\rm in}$, the program uses the bounds
 
 ```math
-\frac{\|J_\Delta\|_1}{d_{\rm in}}
-\le\|\Delta\|_\diamond
-\le\left\|\mathrm{Tr}_{\rm out}|J_\Delta|\right\|.
+\frac{\Vert J_\Delta\Vert _1}{d_{\rm in}}
+\le\Vert \Delta\Vert _\diamond
+\le\left\Vert \mathrm{Tr}_{\rm out}|J_\Delta|\right\Vert .
 ```
 
 The upper bound is a feasible Choi dual bound, not an optimization over all dual witnesses. No SDP optimum or interval certificate is claimed. Matrix positivity and norm inequalities are checked in floating point. The general theorem rests on the [written proofs](../science/README.md).

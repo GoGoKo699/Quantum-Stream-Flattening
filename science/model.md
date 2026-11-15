@@ -6,7 +6,7 @@ The answer is negative for the model below. A public lower bound on address prob
 
 ## Input, target and error
 
-Let $[N]=\{1,\ldots,N\}$ and let $f:[N]\to\{0,1\}$ be an arbitrary fixed function. The only unknown-data access consists of fresh classical records
+Let $[N]=\lbrace 1,\ldots,N\rbrace $ and let $f:[N]\to\lbrace 0,1\rbrace $ be an arbitrary fixed function. The only unknown-data access consists of fresh classical records
 
 ```math
 (X_\ell,f(X_\ell)),\qquad X_\ell\overset{\mathrm{iid}}\sim p,
@@ -24,8 +24,8 @@ O_f=\sum_{x=1}^N(-1)^{f(x)}|x\rangle\langle x|.
 The input address register is available while the stream is processed. It can be entangled with any inaccessible reference or retained algorithmic workspace. Work starts in a fixed zero state. Write $\mathcal I_0$ for appending that state and $\mathcal O_{f,0}$ for applying $O_f$ and appending the same zero state. The physical implementation averages over the discarded classical records. Its error requirement is the **unhalved** diamond norm
 
 ```math
-\|\mathbb E[\mathcal A_{\boldsymbol X}]\mathcal I_0
--\mathcal O_{f,0}\|_\diamond\le\epsilon,
+\Vert \mathbb E[\mathcal A_{\boldsymbol X}]\mathcal I_0
+-\mathcal O_{f,0}\Vert _\diamond\le\epsilon,
 \qquad 0<\epsilon<1.
 ```
 
