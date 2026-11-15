@@ -10,7 +10,7 @@ M=O\!\left(\frac1{b\epsilon}\right).
 
 The guarantee includes coherent control, arbitrary entangled references and return of initialized work within the same error. Only a certified positive probability floor is needed. The address-frequency assignment is never learned or stored, and each classical record is processed once. Every later oracle invocation consumes fresh samples.
 
-[Quantum oracle sketching](references/RELATED_WORK.md) supplies the streamed phase rotations and scalar variance argument. The contribution here is the incoming-image error bound and dyadic stopping/allocation that remove the extra sampling-skew factor from the specified earlier unknown-marginal upper bound. At fixed accuracy, the inverse-$b$ sample dependence matches a rare-address lower bound. The dependence on accuracy and on the number of oracle calls is not claimed optimal.
+[Quantum oracle sketching](references/RELATED_WORK.md) supplies the streamed phase rotations and scalar variance argument. The contribution here is the incoming-image error bound and dyadic stopping/allocation that remove the extra sampling-skew factor from the specified earlier unknown-marginal upper bound. At fixed accuracy, the $1/b$ sample dependence matches a rare-address lower bound. The dependence on accuracy and on the number of oracle calls is not claimed optimal.
 
 ## Read the science
 

@@ -185,6 +185,6 @@ The full-domain rarity cost is unavoidable. If two Boolean functions differ only
 M\ge\frac{\log(1/\epsilon)}{-\log(1-b)}.
 ```
 
-This matches inverse-$b$ dependence at fixed error, including unlimited classical computation and storage. It does not match the inverse-$\epsilon$ upper, and fresh-query composition is not a universal quadratic-query lower bound. See [the lower bound](../science/lower_bound.md).
+This matches $1/b$ dependence at fixed error, including unlimited classical computation and storage. It does not match the $1/\epsilon$ upper, and fresh-query composition is not a universal quadratic-query lower bound. See [the lower bound](../science/lower_bound.md).
 
 Each invocation consumes fresh examples while the input remains coherent. It leaves approximately clean work, not a reusable stored oracle. Deterministic labels, iid records, fixed full support and a certified floor are assumptions of the result. Correlated or noisy sources, hardware thresholds and a complete sample–space–query frontier need separate arguments. The [scientific overview](../science/README.md) connects the canonical proofs, and [related work](../references/RELATED_WORK.md) identifies their inherited ingredients.

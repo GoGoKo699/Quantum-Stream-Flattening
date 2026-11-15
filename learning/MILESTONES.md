@@ -127,7 +127,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M15 — Derive a dyadic envelope for arbitrary frequencies
 
 - **Central question:** How can fixed scales control a frequency that is neither known nor on a discrete grid?
-- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $\sin(\pi p/2)\ge p$ to obtain $c_j(p)\le\min\lbrace 1,a_j/p\rbrace$. Explain why no exact-level or calibrated-$p_{\max}$ promise is needed.
+- **Understanding target:** Derive the sine-product identity for dyadic cosine factors and use $\sin(\pi p/2)\ge p$ to obtain $c_j(p)\le\min\lbrace 1,a_j/p\rbrace$. Explain why no exact-level or calibrated $p_{\max}$ promise is needed.
 - **Dependencies and story role:** Uses M13–M14. The detector sequence now yields a quantitative image bound for every allowed marginal.
 - **Conceptual connection:** Unknown frequency controls where amplitude stops, while the same public ladder controls the worst-case residual at every scale.
 - **Source pointers:** [The dyadic envelope holds for every frequency](../science/coherent_stopping.md#the-dyadic-envelope-holds-for-every-frequency). The trigonometric derivation is supplied locally; Watrous's channel framework remains the educational foundation.
@@ -223,7 +223,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M27 — Match the rarity dependence and retain the precision gap
 
 - **Central question:** What must every compiler learn before it can answer on a rarely observed address?
-- **Understanding target:** Use the no-hit event to compare two functions differing at one address and derive the lower bound on sample count. Explain the fixed-error inverse-$b$ match, the remaining inverse-$\epsilon$ versus logarithmic precision gap, and the special role of coherent control when a phase would otherwise be global.
+- **Understanding target:** Use the no-hit event to compare two functions differing at one address and derive the lower bound on sample count. Explain the fixed-error $1/b$ match, the remaining $1/\epsilon$ versus logarithmic precision gap, and the special role of coherent control when a phase would otherwise be global.
 - **Dependencies and story role:** Uses M05–M07, M21 and M23. It places the achieved upper bound against an operational obstruction.
 - **Conceptual connection:** A lower bound must change the Boolean target itself; changing only the probability-weighted evolution does not provide the needed converse.
 - **Source pointers:** [Rare-address lower bound and remaining gap](../science/lower_bound.md); Watrous §§3.1 and 3.3.3 ([Chapter 3](https://jhwatrous.github.io/TQI.3.pdf)).
@@ -247,7 +247,7 @@ Primary research citations in [related work](../references/RELATED_WORK.md) iden
 ### M30 — State the complete contribution with its boundaries
 
 - **Central question:** What can the compiler now accomplish, under which assumptions and at which complete logical cost?
-- **Understanding target:** Give one connected account from fresh fixed-IID deterministic records and a public positive floor to a clean reference-aware controlled Boolean query, its inverse-$b$ sample upper and charged small workspace. Keep the supplied floor, initialized-input convention, fresh-query costs, finite precision, fixed-error lower match and unresolved precision/query gaps together. Explain why correlated sources, label noise, unknown support, reusable stored oracles and downstream classical-task separations require separate claims.
+- **Understanding target:** Give one connected account from fresh fixed-IID deterministic records and a public positive floor to a clean reference-aware controlled Boolean query, its $1/b$ sample upper and charged small workspace. Keep the supplied floor, initialized-input convention, fresh-query costs, finite precision, fixed-error lower match and unresolved precision/query gaps together. Explain why correlated sources, label noise, unknown support, reusable stored oracles and downstream classical-task separations require separate claims.
 - **Dependencies and story role:** Integrates M01–M29 and closes the narrative phase with the complete scientific proposition rather than an additional extension.
 - **Conceptual connection:** The global result follows because a coherent stopping structure changes how local sample fluctuations act on the incoming image, and the implementation and comparison preserve that same operational meaning.
 - **Source pointers:** [Input model and main result](../science/model.md), [sample theorem](../science/sample_bound.md), [resources](../science/resources.md), [lower bound](../science/lower_bound.md), [related work](../references/RELATED_WORK.md) and [verification scope](../verification/README.md).

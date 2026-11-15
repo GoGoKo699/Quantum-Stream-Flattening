@@ -23,7 +23,7 @@ The source's Theorem D.14 concerns the weighted evolution $\exp(i t\mathrm{diag}
 
 Section 5, Eq. (14), samples from a chosen proposal $q$ and uses the likelihood ratio $p(x)/q(x)$ in each rotation. Its expected generator retains the weighted diagonal $\mathrm{diag}(pf)$. The passive stream here cannot choose $q$ or evaluate that ratio, and its target removes the marginal from the Boolean phase. We use this construction only to identify those access and target differences; its other claims are not needed by our proof.
 
-If $p(x)$ were evaluable, direct inverse-probability compensation would already provide the familiar inverse-$p_{\min}$ variance scale. The present contribution is attaining that scale from passive samples without that evaluation interface.
+If $p(x)$ were evaluable, direct inverse-probability compensation would already provide the familiar $1/p_{\min}$ variance scale. The present contribution is attaining that scale from passive samples without that evaluation interface.
 
 ## Coherent stopping and spectral filtering
 
@@ -43,7 +43,7 @@ This work studies Hamiltonian evolution supplied through copies of a quantum sta
 
 **Q. Wang and Z. Zhang.** [*Time-Efficient Quantum Entropy Estimator via Samplizer*](https://doi.org/10.4230/LIPIcs.ESA.2024.101), ESA 2024.
 
-Their samplizer converts a $Q$-query block-encoding algorithm into a diamond-close quantum sample algorithm using $\widetilde\Theta(Q^2/\delta)$ copies of a mixed state. This establishes a general query-to-sample framework. It does not directly yield the present inverse-$b$ dependence: the access model is quantum copies, and the generic conversion does not exploit the diagonal classical stream's weighted active amplitudes.
+Their samplizer converts a $Q$-query block-encoding algorithm into a diamond-close quantum sample algorithm using $\widetilde\Theta(Q^2/\delta)$ copies of a mixed state. This establishes a general query-to-sample framework. It does not directly yield the present $1/b$ dependence: the access model is quantum copies, and the generic conversion does not exploit the diagonal classical stream's weighted active amplitudes.
 
 **B. Coyle et al.** [*Problem-aware sampling for bias and variance reduction in randomised Hamiltonian simulation*, arXiv:2610.31515](https://arxiv.org/abs/2610.31515), October 2026.
 
@@ -61,4 +61,4 @@ A constructive finite-gate compilation result suffices for the conservative poly
 
 ## What is claimed beyond these ingredients
 
-Streamed diagonal simulation, variance-sensitive error analysis, coherent stopping, spectral filtering and finite-gate compilation are inherited tools. The additional operational statement is a clean unknown-marginal Boolean oracle with sample upper $O(1/(b\epsilon))$, using the residual-amplitude channel estimate and dyadic allocation without a probability-evaluation oracle. The supplied lower bound matches inverse-$b$ dependence at fixed error. Dependence on precision, repeated queries, non-iid data and imperfect labels remains qualified in the scientific account.
+Streamed diagonal simulation, variance-sensitive error analysis, coherent stopping, spectral filtering and finite-gate compilation are inherited tools. The additional operational statement is a clean unknown-marginal Boolean oracle with sample upper $O(1/(b\epsilon))$, using the residual-amplitude channel estimate and dyadic allocation without a probability-evaluation oracle. The supplied lower bound matches $1/b$ dependence at fixed error. Dependence on precision, repeated queries, non-iid data and imperfect labels remains qualified in the scientific account.

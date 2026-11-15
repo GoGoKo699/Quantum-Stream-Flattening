@@ -87,7 +87,7 @@ Reverse stages use the negative angle and **new independent samples**. They do n
 
 If a coherent outer oracle control is required, it is included in these comparisons and in the detection/central-phase circuit. This constructs the controlled channel directly. Controlling an already compiled realization with an unspecified relative phase would be a different interface.
 
-In particular, the middle predicate is **clock not zero**: apply phase minus one exactly when that predicate and the outer control are both true, then uncompute its workspace. Flipping only clock zero would implement the negative of the desired reflection; after coherent control that would require an extra control-$Z$. The construction keeps this convention explicitly.
+In particular, the middle predicate is **clock not zero**: apply phase minus one exactly when that predicate and the outer control are both true, then uncompute its workspace. Flipping only clock zero would implement the negative of the desired reflection; after coherent control that would require an extra controlled $Z$. The construction keeps this convention explicitly.
 
 ## Clock and comparison circuits
 

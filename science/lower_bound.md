@@ -27,7 +27,7 @@ Consequently
 M\ge\frac{\log(1/\epsilon)}{-\log(1-b)}.
 ```
 
-In the small-$b$ regime this is $\Omega(b^{-1}\log(1/\epsilon))$. At every fixed $0<\epsilon<1$, the [sample upper bound](sample_bound.md) and this lower bound give worst-case order $\Theta(1/b)$. If the supplied floor is conservative for a particular stream, the same argument uses the chosen address's actual probability; the theorem is a minimax statement over streams obeying the supplied promise.
+In the small $b$ regime this is $\Omega(b^{-1}\log(1/\epsilon))$. At every fixed $0<\epsilon<1$, the [sample upper bound](sample_bound.md) and this lower bound give worst-case order $\Theta(1/b)$. If the supplied floor is conservative for a particular stream, the same argument uses the chosen address's actual probability; the theorem is a minimax statement over streams obeying the supplied promise.
 
 An ordinary one-dimensional phase is unobservable, so $N=1$ is excluded from this phase-channel comparison. The controlled or bit-oracle task makes the two labels distinguishable even for $N=1$.
 

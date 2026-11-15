@@ -132,6 +132,6 @@ No exact support cutoff is used in this proof. A high-frequency address is allow
 
 Every block uses fresh independent examples. Averaging its sampled gates therefore produces a completely positive trace-preserving channel that is independent of earlier sample records. The input to a block can still be an arbitrary state produced by the preceding computation, with any retained entanglement.
 
-For channels $\mathcal E_i$ and ideal operations $\mathcal U_i$, a telescoping expansion places the $i$th difference after the ideal prefix and before the actual suffix. The suffix cannot increase its diamond norm. Accordingly, a local bound that holds on the image of that ideal prefix is sufficient; a full-workspace bound for the local gate is unnecessary.
+For channels $\mathcal E_i$ and ideal operations $\mathcal U_i$, a telescoping expansion places the difference at position $i$ after the ideal prefix and before the actual suffix. The suffix cannot increase its diamond norm. Accordingly, a local bound that holds on the image of that ideal prefix is sufficient; a full-workspace bound for the local gate is unnecessary.
 
 The prefixes used by the stopping circuit preserve the address and are isometries of the form above. The [return-path argument](sample_bound.md#the-middle-comparison-and-the-return-path) identifies the correct ideal prefixes for its inverse half. It does not assume that noisy work has remained exactly on an ideal image.
